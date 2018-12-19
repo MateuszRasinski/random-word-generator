@@ -1,0 +1,16 @@
+spring:
+  profiles: subject
+server:
+  port: 8031
+
+---
+spring:
+  profiles: predicate
+server:
+  port: 8032
+
+---
+spring:
+  profiles: object
+server:
+  port: 8033
