@@ -11,6 +11,12 @@ server:
 
 ---
 spring:
-  profiles: object
+  profiles: object,regular
 server:
   port: 8033
+
+---
+spring:
+  profiles: object,christmas
+server:
+  port: 8034
