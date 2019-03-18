@@ -1,12 +1,14 @@
 package com.github.mateuszrasinski.microservices.udemy.randomwordgenerator;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 import java.security.SecureRandom;
 import java.util.Objects;
 
 @Component
+@RefreshScope
 class RandomWordGenerator {
 
     private final String words;
