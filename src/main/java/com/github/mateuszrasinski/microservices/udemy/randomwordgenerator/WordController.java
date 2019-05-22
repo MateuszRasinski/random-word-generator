@@ -12,7 +12,7 @@ class WordController {
     }
 
     @GetMapping
-    String getWord() {
-        return randomWordGenerator.generate();
+    WordResponse getWord() {
+        return new WordResponse(randomWordGenerator.generate());
     }
 }
